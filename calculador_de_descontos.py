@@ -12,6 +12,7 @@ class CalculadorDescontos:
         ).calcula(orcamento)
         return desconto
 
+
 if __name__ == '__main__':
     orcamento_1 = Orcamento()
     orcamento_1.adiciona_item(Item("ITEM-1", 100))

@@ -12,6 +12,7 @@ class CalculadorImpostos:
         imposto_calculado: float = imposto.calcula(orcamento)
         print(imposto_calculado)
 
+
 if __name__ == '__main__':
     calculador = CalculadorImpostos()
 
@@ -24,6 +25,12 @@ if __name__ == '__main__':
     calculador.realiza_calculo(orcamento_1, ISS())
     calculador.realiza_calculo(orcamento_1, ICMS())
 
+    print("ISS com ICMS")
+    calculador.realiza_calculo(orcamento_1, ISS(ICMS()))
+
     print("ICPP e IKCV")
     calculador.realiza_calculo(orcamento_1, ICPP())
     calculador.realiza_calculo(orcamento_1, IKCV())
+
+    print("ICPP com IKCV")
+    calculador.realiza_calculo(orcamento_1, ICPP(IKCV()))

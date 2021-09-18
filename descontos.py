@@ -26,4 +26,4 @@ class DescontoMaisDeQuinhentosReais:
 class SemDesconto:
     @staticmethod
     def calcula(orcamento: Orcamento) -> int:
-        return 0
+        return 0*orcamento
