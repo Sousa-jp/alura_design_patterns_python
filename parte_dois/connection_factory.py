@@ -1,7 +1,7 @@
 import mysql.connector
 
-
 from settings import *
+
 
 class ConnectionFactory:
     @staticmethod
